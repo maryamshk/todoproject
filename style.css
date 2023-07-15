@@ -1,0 +1,157 @@
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(https://wallpaperaccess.com/full/168823.jpg), url(black.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-size: cover, 100% auto;
+    background-position: top, bottom;
+    background-size: 100% 45%, 100% 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+ }
+
+ h2{
+    position: absolute;
+    top: 4rem;
+    left: 28rem;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: lighter;
+ }
+
+ .lightmode{
+    position: relative;
+    top: -13.6rem;
+    left: 29rem;
+    font-size: larger;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+ }
+
+ .container{
+    height: 50vh;
+ }
+
+
+#add-task-container{
+    position: relative;
+    width: 350px;
+    height: 1rem;
+    margin-bottom: -5rem;
+    padding: 22px 60px;
+    background-color: rgb(37, 35, 35);
+    }
+
+#input-task{
+    width: 100%;
+    background-color: rgb(37, 35, 35);;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: azure;
+    font-size: .9rem;
+}
+
+#input-task:focus{
+    outline: none; 
+}
+
+
+#add-task{
+    position: relative;
+    top:-1.3rem;
+    margin-left: -3rem;
+    font-size: larger;
+    background-color: transparent;
+    border: none;
+    color: #716e6e;
+    cursor: pointer;
+    } 
+
+.drag{
+    color: #898181;
+    position: absolute;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: .9rem;
+    top: 35rem;
+}
+
+.task,
+.iteminfo{
+    position: relative;
+    top: 8rem;
+    width: 460px;
+    padding: 22px 60px;
+    padding: 5px;
+    display: flex;
+    color: #a79d9d;
+}
+
+.task{
+    border-bottom: 1px solid #7d7575;
+    cursor: move;
+}
+
+.iteminfo{
+    display: grid;
+    grid-template-columns: 150px 40px 45px 50px 200px;
+}
+
+
+.itembtns{
+    background-color: transparent;
+    border: none;
+    color: #a79d9d;
+    cursor: pointer;
+}
+
+.itembtns:last-child{
+    margin-left: 2rem;
+}
+
+
+.itembtns:focus{
+    color: rgb(75, 75, 195);
+}
+
+.task li{
+    list-style: none;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.deleteTask{
+    color: #716e6e;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+} 
+
+.hide{
+    display: none;
+}
+
+.checked {
+    text-decoration: line-through;
+  }
+
+  .light{
+    background-color: #fff;
+  }
+
+
+  .dark{
+    background-color: rgb(37, 35, 35);;
+  }
